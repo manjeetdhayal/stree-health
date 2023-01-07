@@ -47,8 +47,9 @@ const Hero = () => {
 
           <div className="visual">
             <img
-              src="heroImg2.png"
+              src="3d-char.png"
               alt=""
+              width={700}
             />
           </div>
         </div>
