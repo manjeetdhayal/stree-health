@@ -21,7 +21,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background: radial-gradient(#111, #071a1a);
-  color: #fff;
+  /* color: #fff; */
   overflow-x: hidden;
 }
 
@@ -30,6 +30,9 @@ body {
   margin: 0 auto;
 }
 
+.hero-section-text {
+  color: white; 
+}
 .flex {
   display: flex;
   align-items: center;

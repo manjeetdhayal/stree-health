@@ -38,7 +38,7 @@ const Hero = () => {
               <span>Women</span>
             </h1>
 
-            <p className="mb m-auto w-[80%]">
+            <p className="hero-section-text mb m-auto w-[80%]">
               Women's health is important to everyone. A woman's health issues and conditions are unique, ranging from menopause and pregnancy to gynecological conditions like fibroids and endometriosis. Only women suffer from these health issues. There are other conditions that affect men as well, although they have a great deal more impact on women.
             </p>
 

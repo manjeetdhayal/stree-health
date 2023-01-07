@@ -1,7 +1,9 @@
-const mongoose = require('mongoose');
-const { Schema } = require('mongoose');
+// const mongoose = require('mongoose');
+// const { Schema } = require('mongoose');
+import mongoose from 'mongoose';
 
-const QuestionSchema = new Schema({
+
+const questionSchema = mongoose.Schema({
     userId: {
         type: String,
         required: true
@@ -12,4 +14,5 @@ const QuestionSchema = new Schema({
     },
 }, {timestamps: true});
 
-module.exports = mongoose.model('question', QuestionSchema);
+const QuestionSchema = mongoose.model('question', questionSchema);
+export default QuestionSchema; 

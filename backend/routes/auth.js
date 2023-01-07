@@ -1,12 +1,22 @@
-const express = require('express');
-const router = express.Router();
-const UserSchema = require('../models/User');
-const { body, validationResult } = require('express-validator');
-var bcrypt = require('bcryptjs');
-var jwt = require('jsonwebtoken');
-const fetchuser = require('../middleware/fetchuser');
 
-require('dotenv').config();
+import express from "express"; 
+import UserSchema from "../models/User.js";
+import {body, validationResult} from 'express-validator'; 
+import bcrypt from 'bcryptjs'; 
+import jwt from 'jsonwebtoken'; 
+import dotenv from 'dotenv'; 
+import expressAsyncHandler from "express-async-handler"; 
+// const express = require('express');
+const router = express.Router();
+// const UserSchema = require('../models/User');
+// const { body, validationResult } = require('express-validator');
+// var bcrypt = require('bcryptjs');
+// var jwt = require('jsonwebtoken');
+// const fetchuser = require('../middleware/fetchuser');
+
+// require('dotenv').config();
+dotenv.config(); 
+
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
@@ -99,4 +109,15 @@ router.post('/login', [
 });
 
 
-module.exports = router;
+// let's add a header for each routes 
+// @desc Fetch list of all users 
+// @route GET /api/doctors
+// @access public 
+
+router.get('/', 
+expressAsyncHandler(async (req, res) => {
+    const users = await UserSchema.find({}); 
+    res.json(users); 
+})); 
+
+export default router; 

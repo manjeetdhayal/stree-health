@@ -1,13 +1,34 @@
-const express = require('express');
-const router = express.Router();
-const UserSchema = require('../models/User');
-const QuestionSchema = require('../models/Qna');
-const { body, validationResult } = require('express-validator');
-var bcrypt = require('bcryptjs');
-var jwt = require('jsonwebtoken');
-const fetchuser = require('../middleware/fetchuser');
+// const express = require('express');
+// const router = express.Router();
+// const UserSchema = require('../models/User');
+// const QuestionSchema = require('../models/Qna');
+// const { body, validationResult } = require('express-validator');
+// var bcrypt = require('bcryptjs');
+// var jwt = require('jsonwebtoken');
+// const fetchuser = require('../middleware/fetchuser');
 
-require('dotenv').config();
+// require('dotenv').config();
+
+// const JWT_SECRET = process.env.JWT_SECRET;
+
+import express from "express"; 
+import UserSchema from "../models/User.js";
+import {body, validationResult} from 'express-validator'; 
+import bcrypt from 'bcryptjs'; 
+import jwt from 'jsonwebtoken'; 
+import dotenv from 'dotenv'; 
+// const express = require('express');
+const router = express.Router();
+import fetchuser from '../middleware/fetchuser.js'; 
+// const UserSchema = require('../models/User');
+// const { body, validationResult } = require('express-validator');
+// var bcrypt = require('bcryptjs');
+// var jwt = require('jsonwebtoken');
+// const fetchuser = require('../middleware/fetchuser');
+
+// require('dotenv').config();
+dotenv.config(); 
+
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
@@ -62,4 +83,4 @@ router.post('/login', [
 });
 
 
-module.exports = router;
+export default router; 

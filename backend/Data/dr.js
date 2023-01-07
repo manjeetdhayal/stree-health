@@ -1,12 +1,11 @@
-import imgDoctor from './dr.png'; 
-
-const Doctor = [
+const imgDoctor = 'https://i.stack.imgur.com/34AD2.jpg'
+const DoctorData = [
     {
         name: "Manjeet", 
         email: "xyz@gmail.com", 
         phone: 123456789, 
         type: "A", 
-        img: 'https://i.stack.imgur.com/34AD2.jpg',
+        img: imgDoctor,
         symptoms: ["cough", "fever", "headache"],
         location: ["Rourkela", "BBSR"], 
         rating: 5, 
@@ -53,4 +52,4 @@ const Doctor = [
     },
 ]
 
-export default Doctor; 
+export default DoctorData;  
