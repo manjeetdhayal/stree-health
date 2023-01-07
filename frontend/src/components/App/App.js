@@ -3,6 +3,7 @@ import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
 import Doctor from '../Data/dr'; 
 import React, { useState } from 'react';
+import Hero from '../Hero/Hero';
 
 // const business = {
 //   imageSrc: "https://content.codecademy.com/programs/react/ravenous/pizza.jpg",
@@ -162,9 +163,14 @@ const App = () => {
   }
 
   return (
-    <div className = "search-doctor">
-        <SearchBar searchDoctor = {searchDoctor} />
-        <BusinessList businesses= {doctors} />
+    <div className='w-[100%]'>
+      <div className="hero w-[100%] h-screen">
+        <Hero />
+      </div>
+      <div className = "search-doctor">
+          <SearchBar searchDoctor = {searchDoctor} />
+          <BusinessList businesses= {doctors} />
+      </div>
     </div>
   )
 }
