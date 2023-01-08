@@ -4,7 +4,7 @@ import SearchBar from '../SearchBar/SearchBar';
 import Doctor from '../Data/dr'; 
 import React, { useState } from 'react';
 import Hero from '../Hero/Hero';
-
+import Footer from '../Footer/footer';
 // const business = {
 //   imageSrc: "https://content.codecademy.com/programs/react/ravenous/pizza.jpg",
 //   name: "MarginaOtto Pizzeria",
@@ -171,6 +171,7 @@ const App = () => {
           <SearchBar searchDoctor = {searchDoctor} />
           <BusinessList businesses= {doctors} />
       </div>
+      <Footer/>
     </div>
   )
 }

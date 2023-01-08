@@ -75,6 +75,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="SearchBar">
+        <h1 className = "consult-doctor"> Search for <span>Doctors</span></h1>
         <div className="SearchBar-sort-options">
           <ul>{this.renderSortByOptions}</ul>{" "}
           {/* Note as we used getter method we can use this.renderSortByOptions else we must use this.renderSortByOptions()*/}
