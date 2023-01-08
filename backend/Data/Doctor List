@@ -1,0 +1,229 @@
+const Doctor = {
+	{
+		name: "Dr. Rajeev Naik"
+		email: "xyz@gmail.com"
+		phone: 9079312761,
+		type: "A",
+        img: 'https://drive.google.com/file/d/1wD77MXLjQhPrd4W47JSGkaKzIHtyW54C/view?usp=sharing'
+		symptoms: ["cardio","heart"],
+		location: ["Mumbai","pune"],
+		rating: 4.5,
+	},
+    {
+		name: "Dr. Prachi Parmar"
+		email: "xyz@gmail.com"
+		phone: 9674525122,
+		type: "A",
+		symptoms: ["eyes","eyepain"],
+		location: ["ahemdabad","jaipur"],
+		rating: 4.1,
+	},
+    {
+		name: "Dr. Vicky Jain"
+		email: "klh@gmail.com"
+		phone: 9353646326,
+		type: "B",
+		symptoms: ["cough","fever","headache"],
+		location: ["Bhubaneswar","banglore","chandigadh"],
+		rating: 4.9,
+	},
+	{
+		name: "Dr. Saumil Sheth"
+		email: "ytr@gmail.com"
+		phone: 9742489234,
+		type: "B",
+		symptoms: ["cough","stomach pain","vomitting"],
+		location: ["bangalore","ahemdabad"],
+		rating: 4.4,
+	},
+	{
+		name: "Dr. Harshil Shah"
+		email: "uqw@gmail.com"
+		phone: 9453646362,
+		type: "C",
+		symptoms: ["headache","joint pain","vomitting"],
+		location: ["delhi","chandigadh","noida"],
+		rating: 4.8,
+	},
+	{
+		name: "Dr. Aashna Kanchwala"
+		email: "bhga@gmail.com"
+		phone: 9675434321,
+		type: "D",
+		symptoms: ["body pain","cough"],
+		location: ["jaipur","mumbai","pune"],
+		rating: 5,
+	},
+	{
+		name: "Dr. Kavita Agarwal"
+		email: "yuhe@gmail.com"
+		phone: 9646767637,
+		type: "A",
+		symptoms: ["headache","cough"],
+		location: ["bangalore","hyderabad"],
+		rating: 3.5,
+	},
+	{
+		name: "Dr. Pankaj Mistry"
+		email: "pans@gmail.com"
+		phone: 9834656321,
+		type: "A",
+		symptoms: ["cardiac","body pain"],
+		location: ["mumbai","Bhubaneswar"],
+		rating: 4.9,
+	},
+	{
+		name: "Dr Abhidha Shah"
+		email: "tutts@gmail.com"
+		phone: 9872487283,
+		type: "B",
+		symptoms: ["fatigue","loss of appetite"],
+		location: ["jaipur","indore","delhi"],
+		rating: 4.7,
+	},
+	{
+		name: "Dr Aditi Singhi"
+		email: "trye@gmail.com"
+		phone: 9889274873,
+		type: "C",
+		symptoms: ["nausea ","shivering","mental confusion"],
+		location: ["ahmedabad","jaipur"],
+		rating: 4.3,
+	},
+	{
+		name: "Dr. Nikunj Bansal"
+		email: "gyhd@gmail.com"
+		phone: 9664726732,
+		type: "D",
+		symptoms: ["shivering","Body aches"],
+		location: ["delhi","noida","lucknow"],
+		rating: 4.4,
+	},
+    {
+		name: "Dr. Saurabh Kumar Goyal"
+		email: "fgaf@gmail.com"
+		phone: 9898378238,
+		type: "A",
+		symptoms: [" anxiety","abnormal heartbeat","tightness "],
+		location: ["bhubaneswar","bangalore"],
+		rating: 4.7,
+	},
+	{
+		name: "Dr. Shweta Jain"
+		email: "fjhj@gmail.com"
+		phone: 9875687367,
+		type: "C",
+		symptoms: ["headaches","loss of balance","confusion"],
+		location: ["ahmedabad","mumbai","pune"],
+		rating: 4.3,
+	},
+	{
+		name: "Dr. Tapeshwar Sehgal"
+		email: "tayy@gmail.com"
+		phone: 9798679671,
+		type: "D",
+		symptoms: [" vomiting","muscle weakness,","sleepiness"],
+		location: ["hyderabad","pune","bangalore"],
+		rating: 3.9,
+	},
+	{
+		name: "Dr. Parvinder Singh Arora"
+		email: "yuya@gmail.com"
+		phone: 9898983239,
+		type: "A",
+		symptoms: ["headache","muscle pain"],
+		location: ["delhi","jaipur"],
+		rating: 3.7,
+	},
+	{
+		name: "Dr. Lokesh Sharma"
+		email: "cvud@gmail.com"
+		phone: 9893242349,
+		type: "D",
+		symptoms: ["Coughing","Diarrhea","Fever"],
+		location: ["mumbai","indore","noida"],
+		rating: 3.9,
+	},
+	{
+		name: "Dr. Rekha Jain"
+		email: "hduh@gmail.com"
+		phone: 9788774238,
+		type: "A",
+		symptoms: ["vomitting","Fever"],
+		location: ["jaipur","ahemdabad"],
+		rating: 3.9,
+	},
+	{
+		name: "Dr. Sumit Anand"
+		email: "giiy@gmail.com"
+		phone: 9686483823,
+		type: "B",
+		symptoms: ["cough","abnormal heartbeat","Muscle aches"],
+		location: ["hyderabad","kolkata"],
+		rating: 3.5,
+	},
+    {
+		name: "Dr. Sunny Singhal"
+		email: "yusg@gmail.com"
+		phone: 9794545863,
+		type: "D",
+		symptoms: ["muscles fatigue"," nausea","shivering"],
+		location: ["ahemdabad","jaipur","mumbai"],
+		rating: 4.7,
+	},
+	{
+		name: "Dr Chirag Matravadia"
+		email: "chir@gmail.com"
+		phone: 9686483823,
+		type: "B",
+		symptoms: ["tightness ","cardiac","loosemotion"],
+		location: ["bangalore","ahemdabad"],
+		rating: 3.5,
+	},
+	{
+		name: "Dr Gajendra Mehta"
+		email: "hhas@gmail.com"
+		phone: 9707972348,
+		type: "D",
+		symptoms: ["Shortness of breath","Diarrhea","vomiting"],
+		location: ["chennai","bangalore","pune"],
+		rating: 3.5,
+	},
+	{
+		name: "Dr. A. Praveen Kumar Reddy"
+		email: "tyada@gmail.com"
+		phone: 9909827429,
+		type: "C",
+		symptoms: ["Fever","Persistent pain","Sore throat"],
+		location: ["chennai","kolkata"],
+		rating: 3.5,
+	},
+	{
+		name: "Dr. Rashmi Shetty"
+		email: "huha@gmail.com"
+		phone: 8986762637,
+		type: "A",
+		symptoms: ["Skin changes","indigestion "," bleeding "],
+		location: ["mumbai","chennai","jaipur"],
+		rating: 3.7,
+	},
+	{
+		name: "Dr. Prafulla Biradar"
+		email: "jjua@gmail.com"
+		phone: 9097424742,
+		type: "B",
+		symptoms: ["fever","Sore throat"],
+		location: ["chennai","delhi","noida"],
+		rating: 4.7,
+	},
+    {
+		name: "narendra agrawal"
+		email: "nauo@gmail.com"
+		phone: 7890787894,
+		type: "A",
+		symptoms: ["fatigue","shortness of breath","malaise"],
+		location: ["chennai","pune","indore"],
+		rating: 5,
+	},
+    
+}
