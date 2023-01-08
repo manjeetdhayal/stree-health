@@ -12,6 +12,10 @@ const questionSchema = mongoose.Schema({
         type: String,
         required: true,
     },
+    answers: {
+        type: Array,
+        default: []
+    }
 }, {timestamps: true});
 
 const QuestionSchema = mongoose.model('question', questionSchema);

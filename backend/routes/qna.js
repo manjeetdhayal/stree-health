@@ -20,6 +20,7 @@ import dotenv from 'dotenv';
 // const express = require('express');
 const router = express.Router();
 import fetchuser from '../middleware/fetchuser.js'; 
+import QuestionSchema from '../models/Qna.js';
 // const UserSchema = require('../models/User');
 // const { body, validationResult } = require('express-validator');
 // var bcrypt = require('bcryptjs');
@@ -59,28 +60,18 @@ router.post('/new', [
 });
 
 
-
-// Route 2: Authenticating an existing user: POST: http://localhost:8181/api/auth/register. No Login Required
-router.post('/login', [
-    body('email', "Please Enter a Vaild Email").isEmail(),
-    body('password', "Password Should Be At Least 6 Characters").isLength({ min: 6 }),
-], async (req, res) => {
-
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
-
-
+// Route 2: Get all questions: GET: http://localhost:8181/api/qna/. No Login Required
+router.get('/', async (req, res) => {
     try {
-        
-
+        const allQuestions = await QuestionSchema.find();
+        res.status(200).json(allQuestions);
 
     } catch (error) {
         console.error(error);
         return res.status(500).send("Internal Server Error");
     }
 });
+
 
 
 export default router; 
