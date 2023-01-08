@@ -4,10 +4,6 @@ import mongoose from 'mongoose';
 
 
 const questionSchema = mongoose.Schema({
-    userId: {
-        type: String,
-        required: true
-    },
     questionText: {
         type: String,
         required: true,

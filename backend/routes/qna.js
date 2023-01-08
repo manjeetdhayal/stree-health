@@ -38,7 +38,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 // Route 1: Add a question: POST: http://localhost:8181/api/qna/new. No Login Required
 router.post('/new', [
     body('text', "Your question should be at least 10 characters long.").isLength({ min: 10 }),
-], fetchuser, async (req, res) => {
+], async (req, res) => {
     
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -47,7 +47,6 @@ router.post('/new', [
 
     try {
         const newQuestion = await QuestionSchema.create({
-            userId: req.user.id,
             questionText: req.body.text,
         });
 

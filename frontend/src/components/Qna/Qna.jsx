@@ -6,7 +6,7 @@ const Qna = () => {
     const [questions, setQuestions] = useState([]);
 
     const fetchAllQuestions = async () => {
-        const response = await fetch('http://localhost:8181/api/qna');
+        const response = await fetch('https://stree-health-production.up.railway.app/api/qna');
         const json = await response.json();
         setQuestions(json);
     }
