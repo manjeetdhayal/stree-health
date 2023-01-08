@@ -30,6 +30,10 @@ const Hero = () => {
       toast.success("Your question has been submitted successfully!");
       setQuestionInput("");
       modalClose();
+
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
     }
     else if (response.status === 500) {
       toast.error("Internal Server Error!");
